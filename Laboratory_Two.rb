@@ -33,6 +33,7 @@ class LaboratoryTwo
     end.to_f
     s = (f.to_f / n).to_f
     return part_two(n + 1000) if (s_real - s).abs > 0.00001
+
     s
   end
 
@@ -56,8 +57,5 @@ class LaboratoryTwo
       (f + (yield x).to_f).to_f
     end.to_f
     (b - a) * s / n
-  end
-
-  def part_three
   end
 end
